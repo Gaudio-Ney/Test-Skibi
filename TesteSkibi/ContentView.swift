@@ -24,7 +24,9 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                     }
             }.padding()
-        }//.background(Color(.black))
+        }.onAppear{
+            print("Oi")
+        }
     }
 }
 
@@ -57,6 +59,7 @@ struct URLPreview : UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: LPLinkView, context: UIViewRepresentableContext<URLPreview>) {
+        
     }
 }
 
